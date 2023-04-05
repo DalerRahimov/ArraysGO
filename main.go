@@ -17,7 +17,7 @@ func main() {
 	case 2:
 		Arrays.Arr14()
 	case 3:
-		Arrays.Arr14_2()
+		Arrays.Arr142()
 	case 4:
 		Arrays.Arr21()
 	default:
