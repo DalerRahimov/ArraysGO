@@ -47,7 +47,7 @@ func Arr21() {
 	}
 	if K >= 0 && L > K && N >= L {
 		sum := 0
-		j := 1
+		j := 0
 		for i := K - 1; i <= L-1; i++ {
 			sum += Arr[i]
 			j++
