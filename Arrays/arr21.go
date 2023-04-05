@@ -8,7 +8,9 @@ import (
 
 func Arr21() {
 	fmt.Println("Введите размер масива:")
-	var N, K, L int
+	var (
+		N, K, L int
+	)
 	var err error
 	_, err = fmt.Scan(&N)
 	if err != nil {
@@ -45,10 +47,14 @@ func Arr21() {
 	}
 	if K >= 0 && L > K && N >= L {
 		sum := 0
+		j := 1
 		for i := K - 1; i <= L-1; i++ {
 			sum += Arr[i]
+			j++
 		}
-		fmt.Println(sum)
+		var ress float64
+		ress = float64(sum / j)
+		fmt.Println(ress)
 
 	} else {
 		log.Println(Consts.Error)
