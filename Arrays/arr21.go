@@ -53,7 +53,7 @@ func Arr21() {
 			j++
 		}
 		var ress float64
-		ress = float64(sum / j)
+		ress = float64(sum) / float64(j)
 		fmt.Println(ress)
 
 	} else {
